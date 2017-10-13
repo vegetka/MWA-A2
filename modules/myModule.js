@@ -19,7 +19,7 @@ function HomeController($scope){
     $scope.button = "Click";
     $scope.AddElement = function(){
         var s = "two";
-        $scope.item.push({'one': s}); // = "two";
+        $scope.item.push({'new': s}); // = "two";
     }
 }
 
