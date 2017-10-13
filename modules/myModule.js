@@ -15,10 +15,11 @@ function HomeController($scope){
     $scope.title = "Do not push the putton";
     $scope.body  = "Welcome";
     $scope.list  = "List";
-    $scope.item  = "one";
+    $scope.item  = [];
     $scope.button = "Click";
     $scope.AddElement = function(){
-        $scope.item = ("two"); // = "two";
+        var s = "two";
+        $scope.item.push({'one': s}); // = "two";
     }
 }
 
