@@ -14,7 +14,8 @@
 <!-- List -->
 <ul>
     <li ng-repeat="item in item">
-        <i id="delete" class="material-icons" ng-click="removeElement($index)">clear</i>
+        <span><img id="delete" src="ico/x.png" ng-click="removeElement($index)"/></span>
+        <!-- <i id="delete" class="material-icons" ng-click="removeElement($index)">clear</i> -->
         <span>{{item.new}}</span>
     </li>
 </ul>
