@@ -6,10 +6,13 @@
     <button ng-disabled="itemForm.$invalid" ng-click="addElement()" >{{button}}</button>
 </form>
 
+<p>{{listInfo}}
+</p>
+
 <!-- List -->
-<ul>{{list}}
+<ul>
     <li ng-repeat="item in item">
-        <i class="material-icons" ng-click="removeItem($index)">language</i>
+        <i id="delete" class="material-icons" ng-click="removeElement($index)">clear</i>
         <span>{{item.new}}</span>
     </li>
 </ul>

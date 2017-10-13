@@ -1,11 +1,33 @@
+/* All items */
+*{
+    font-family: "Segoe", sans-serif;
+    text-align: center;
+
+}
+
+body{
+    background-color: dimgrey;
+}
 #title{
     color: aqua;
+    border-bottom: 3px solid black;
+    background-color: blueviolet;
+    text-align: center;
 }
 
 ul{
     list-style: none;
+
 }
 
 li{
     text-transform: capitalize;
+     text-align: left;
 }
+
+/* Delete Icon */
+#delete{
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
