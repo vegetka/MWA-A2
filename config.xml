@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
-    xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.phonegap.example"
-    versionCode = "10"
-    version     = "1.0.0" >
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        versionCode = "10"
+        version     = "1.0.0" >
 
-  <name>MWA A2</name>
+    <name>MWA A2</name>
 
-  <description>
-      Mobile & Web Applications Assessment 2
-  </description>
+    <description>
+        Mobile and Web Applications Assessment 2
+    </description>
 
-  <author href="https://vegetka.tk" email="vegetka@gmail.com">
-      Arkadiusz Maciak
-  </author>
+    <author href="https://vegetka.tk" email="arkadiusz.maciak@webelevate.ie">
+        Arkadiusz Maciak
+    </author>
+
+    <icon src="ico/x.png"/>
 
 </widget>
