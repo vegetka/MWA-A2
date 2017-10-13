@@ -11,11 +11,15 @@ function MainController($scope){
 }
 
 function HomeController($scope){
+    console.log("inside HomeController");
     $scope.title = "Do not push the putton";
     $scope.body  = "Welcome";
     $scope.list  = "List";
     $scope.item  = "one";
-    $scope.button = "Hello";
+    $scope.button = "Click";
+    $scope.AddElement = function(){
+        $scope.item = ("two"); // = "two";
+    }
 }
 
 function FAQcontroller($scope){
@@ -24,5 +28,6 @@ function FAQcontroller($scope){
 }
 
 function Clicker($scope){
-    $scope.item.push("two");
+    $scope.item = "two";
+    console.log("inside clicker");
 }
