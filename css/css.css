@@ -1,4 +1,11 @@
-/* comment */
-commit{
-    it: now;
+#title{
+    color: aqua;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-transform: capitalize;
 }

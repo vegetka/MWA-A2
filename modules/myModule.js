@@ -1,4 +1,4 @@
-angular.module('myModule', ['ngRoute']).
+angular.module('mwaa2', ['ngRoute']).
     config(function($routeProvider){
         $routeProvider.
             when('/', {templateUrl:'partials/home.html', controller:HomeController}).
@@ -16,10 +16,13 @@ function HomeController($scope){
     $scope.body  = "Welcome";
     $scope.list  = "List";
     $scope.item  = [];
-    $scope.button = "Click";
-    $scope.AddElement = function(){
-        $scope.item.push({'new': $scope.newItem, 'done':false}); // = "two";
+    $scope.button = "Add";
+    $scope.addElement = function(){
+        $scope.item.push({'new': $scope.newItem, 'done':false});
     }
+    $scope.removeElement = function(index){
+        $scope.item.splice(index, 1);
+    };
 }
 
 function FAQcontroller($scope){

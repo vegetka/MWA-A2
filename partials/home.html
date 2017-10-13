@@ -1,10 +1,15 @@
-<h1>{{title}}</h1>
+<h1 id="title">{{title}}</h1>
 <h1>{{body}}</h1>
 <form name="itemForm">
-    <input type="text" name="newItem" ng-model="newItem" required/>
-    <button ng-disabled="itemForm.$invalid" ng-click="AddElement()" >{{button}}</button>
+    <label for="newItem">Input Item: </label>
+    <input id="newItem" type="text" name="newItem" ng-model="newItem" required/>
+    <button ng-disabled="itemForm.$invalid" ng-click="addElement()" >{{button}}</button>
 </form>
 
+<!-- List -->
 <ul>{{list}}
-<li ng-repeat="item in item">{{item.new}}</li>
+    <li ng-repeat="item in item">
+        <i class="material-icons" ng-click="removeItem($index)">language</i>
+        <span>{{item.new}}</span>
+    </li>
 </ul>
