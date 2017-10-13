@@ -1,27 +1,28 @@
-angular.module('mwaa2', ['ngMaterial']);
-
+// App configuration
 angular.module('mwaa2', ['ngRoute']).
     config(function($routeProvider){
         $routeProvider.
             when('/', {templateUrl:'partials/home.html', controller:HomeController}).
             when('/faq', {templateUrl:'partials/faq.html', controller:FAQcontroller}).
-            otherwise({redirectTo:'/', templateUrl:'partials/basic-template.html'})
-    });
+            otherwise({redirectTo:'/', templateUrl:'partials/home.html'})
+});
 
-function MainController($scope){
-    
-}
-
+// Main controller
 function HomeController($scope){
     // debug
-    l("inside HomeController");
-    $scope.title = "Do not push the putton";
-    $scope.body  = "Welcome";
-    $scope.listInfo = "List will show below (press X to delete item)";
-    $scope.item  = [];
-    $scope.button = "Add";
+    l("HomeController started");
+    // Page elements content
+    $scope.header    = "Arkadiusz Maciak";
+    $scope.title     = "Mobile & Web Applications";
+    $scope.inputInfo = "Type something into empty box, press 'Enter' or click 'Add' button to confirm";
+    $scope.listInfo  = "List will show below (press X to delete item)";
+    $scope.item      = [];
+    $scope.button    = "Add";
+    $scope.footer    = "(c) 2017 Arkadiusz Maciak for Mobile & Web Applications Assessment 2"
     // add new element to the list
     $scope.addElement = function(){
+        // debug
+        l($scope.newItem);
         // get text from input box, add item to the list
         $scope.item.push({'new': $scope.newItem, 'done':false});
         // clear input field
@@ -39,6 +40,4 @@ function FAQcontroller($scope){
 }
 
 // debugger
-function l(s){
-    console.log(s);
-}
+function l(s){ console.log(s); }

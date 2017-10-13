@@ -1,13 +1,15 @@
-<h1 id="title">{{title}}</h1>
-<h1>{{body}}</h1>
-<form name="itemForm">
+<h1 id="header">{{header}}</h1>
+<h2>{{title}}</h2>
+
+<p id="inputInfo">{{inputInfo}}</p>
+
+<form id="form" name="itemForm">
     <label for="newItem">Input Item: </label>
     <input id="newItem" type="text" name="newItem" ng-model="newItem" required/>
     <button ng-disabled="itemForm.$invalid" ng-click="addElement()" >{{button}}</button>
 </form>
 
-<p>{{listInfo}}
-</p>
+<p id="listInfo">{{listInfo}}</p>
 
 <!-- List -->
 <ul>
@@ -16,3 +18,5 @@
         <span>{{item.new}}</span>
     </li>
 </ul>
+
+<h1 id="footer">{{footer}}</h1>
