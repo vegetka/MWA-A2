@@ -29,6 +29,12 @@ body{
     border-top: 3px solid black;
 }
 
+
+/* Content formatting in About.html page */
+.angular-with-newlines {
+    white-space: pre-wrap;
+}
+
 /* other elements */
 #form{
     font-size: 20px;
@@ -53,9 +59,13 @@ li{
     border: 1px solid black;
     padding: 5px 10px;
 }
+#aboutContent{
+    text-align: left;
+}
 
 /* Delete Icon */
 #delete{
     width: 14px;
     cursor: pointer;
 }
+
